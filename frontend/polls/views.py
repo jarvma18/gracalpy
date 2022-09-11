@@ -1,4 +1,7 @@
+'''Polls views'''
 from django.http import HttpResponse
 
 def index(request):
-  return HttpResponse("Hello, world. You're at the polls index.")
+    '''Index of views'''
+    print(request)
+    return HttpResponse('Hello, world. You are at the polls index.')
